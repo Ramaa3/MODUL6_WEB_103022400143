@@ -20,6 +20,9 @@ function App() {
       <h1 className="judul" style= {gayaJudul}>Kantin {nama_panggilan}</h1>
       <p>{jam <  12 ? 'Selamat pagi' : 'Selama Siang'}</p>
       <p>Saldo Awal kartu Kantin : Rp {(N * 1000).toLocaleString('id-ID')}</p>
+      <Panel judul= "menu hari ini">
+        <button onClick={balikurutan}>Balik Urutan</button>
+      </Panel>
       <button disabled>Bayar</button>
       
 
@@ -27,6 +30,7 @@ function App() {
   )
 
 }
+
 
 
 
